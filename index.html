@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Travel Landing page</title>
+  </head>
+  <body>
+    <section class="showcase active">
+      <header>
+        <h2 class="logo">Travel</h2>
+        <div class="toggle active"></div>
+      </header>
+      <video
+        src="https://player.vimeo.com/external/269971860.sd.mp4?s=a3036bd1a9f15c1b31daedad98c06a3b24cdd747&profile_id=164&oauth2_token_id=57447761"
+        muted
+        loop
+        autoplay
+      ></video>
+
+      <div class="overlay"></div>
+
+      <div class="text">
+        <h2>Never Stop</h2>
+        <h3>Exploring The World</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit nihil
+          labore iure asperiores architecto quam excepturi, praesentium minima
+          recusandae assumenda officia aspernatur necessitatibus odio
+          accusantium sed distinctio maxime. Neque, magni?
+        </p>
+        <a href="#">Explore</a>
+      </div>
+
+      <ul class="social">
+        <li>
+          <a href="#"><img src="facebook.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="twitter.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="instagram.png" alt="" /></a>
+        </li>
+      </ul>
+    </section>
+
+    <div class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Destination</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <script>
+      const menuToggle = document.querySelector(".toggle");
+      const showCase = document.querySelector(".showcase");
+
+      menuToggle.addEventListener("click", () => {
+        menuToggle.classList.toggle("active");
+        showCase.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
